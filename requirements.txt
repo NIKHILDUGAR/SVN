@@ -1,0 +1,12 @@
+sklearn
+tldextract
+regex
+python-whois
+module
+scipy
+numpy
+bs4
+matplotlib
+pandas
+scikit_learn
+joblib
