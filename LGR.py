@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
 
-dataset = pd.read_csv("D:\\MLH Project\\datasets\\dataset.csv")
+dataset = pd.read_csv("/root/Hackcbs/SVN/datasets/dataset.csv")
 #dataset = dataset.drop('id', 1)
 x = dataset.iloc[ : , :-1].values
 y = dataset.iloc[:, -1:].values
@@ -16,4 +16,4 @@ y_pred = classifier.predict(x_test)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 print(cm)
-joblib.dump(classifier, 'Model\\logisticReg_final.pkl')
+joblib.dump(classifier, 'Model/logisticReg_final.pkl')

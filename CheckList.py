@@ -9,12 +9,13 @@ import datetime
 
 
 def url_having_ip(url):
-    symbol = regex.findall(r'(http((s)?)://)((((\d)+).)*)((\w)+)(/((\w)+))?',url)
-    if(len(symbol)!=0):
-        having_ip = 1
-    else:
-        having_ip = -1
-    return(having_ip)
+    #symbol = regex.findall(r'(http((s)?)://)((((\d)+).)*)((\w)+)(/((\w)+))?',url)
+    #if(len(symbol)!=0):
+    #    having_ip = 1
+    #else:
+    #    having_ip = -1
+    #return(having_ip)
+    return 0
 
 
 def url_length(url):
