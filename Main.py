@@ -2,6 +2,14 @@ from sklearn.externals import joblib
 import CheckList
 classifier = joblib.load('/root/Hackcbs/SVN/Model/logisticReg_final.pkl')
 def getr(url):
+    if "https://" in url:
+        url=url[8:]
+    elif  "http://" in url:
+        url=url[7:]
+    else:
+        pass
+    if "www" in url:
+        url=url[3:]
     checkprediction = CheckList.main(url)
     x = classifier.predict(checkprediction)
     flag=0

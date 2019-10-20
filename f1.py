@@ -37,6 +37,7 @@ def adder_page():
             <center>
             <input id="field_location" class="field r2" placeholder="Enter URL" id="Postcode" name="URL" type="text" value="">
             <input type="submit" id="findbutton" name="action" value="Submit" />
+            
             </center>
         </div>
 
