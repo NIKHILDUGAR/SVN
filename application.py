@@ -14,9 +14,18 @@ def adder_page():
             inputs=""
             return '''
                 <html>
-                    <body>
-                        <p>{result}</p>
-                        <p><a href="/">Click here to check again</a>
+                    <body background="https://engineering.nyu.edu/sites/default/files/styles/content_header_1024_1_5x/public/2018-03/program-cybersecurity-risk-strategy.jpg?h=e1d1bc8a&itok=6ebHHz_7">
+                        <p class=”breakAfter”>
+            
+            <center>
+            <font font size =5 color="yellow" ><b>{result}</b></font>
+            </center>
+        </p>
+         <p class=”breakAfter2”>
+           
+            <center>
+            <font font size =5 color="yellow" ><b><a href = "/">Click here to check again</a></b></font>
+            </center>
                     </body>
                 </html>
             '''.format(result=result)

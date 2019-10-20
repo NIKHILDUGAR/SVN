@@ -9,13 +9,12 @@ import datetime
 
 
 def url_having_ip(url):
-    symbol = regex.findall(r'(http((s)?)://)((((\d)+).)*)((\w)+)(/((\w)+))?',url)
-    if(len(symbol)!=0):
-       having_ip = 1
-       having_ip = -1
-    return(having_ip)
-    #return 0
-
+    #symbol = regex.findall(r'(http((s)?)://)((((\d)+).)*)((\w)+)(/((\w)+))?',url)
+    #if(len(symbol)!=0):
+     #  having_ip = 1
+      # having_ip = -1
+    #return(having_ip)
+    return 0
 
 def url_length(url):
     length=len(url)
@@ -242,8 +241,8 @@ def abnormal_url(url):
     l=["ngrok","serveo","tinyurl","bit.ly"]
     for i in l:
         if i in url:
-            return -1    
-        return 1
+            return 1    
+        return -1
 
 def redirect(url):
     #later
